@@ -69,7 +69,6 @@ export default {
     this._getBanner()
     this._getRecommendList()
     this._getRecommendMusic()
-    // this.$refs.recommendList.style.
   },
   methods: {
     // firstPlay () {
@@ -115,12 +114,8 @@ export default {
     _getBanner () {
       getBanner().then((res) => {
         if (res.status === ERR_OK) {
-          // let list = res.data.banners.map((item) => {
-          //   if (item.)
-          // })
           let list = res.data.banners
           this.banner = list.splice(4)
-          // console.log(this.banner)
         } else {
           console.error('Banner 获取失败')
         }
