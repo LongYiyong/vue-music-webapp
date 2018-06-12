@@ -71,10 +71,6 @@ export default {
     this._getRecommendMusic()
   },
   methods: {
-    // firstPlay () {
-    //   console.log('firstPlay')
-    //   this.$refs.audio.play()
-    // },
     selectBanner (item) {
       let regHttp = /^http/
       let regSong = /\/song\?id/
